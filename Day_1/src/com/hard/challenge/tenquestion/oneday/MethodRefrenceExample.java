@@ -16,9 +16,11 @@ public class MethodRefrenceExample {
 	
 	System.out.println();
 	
-	List<Integer> numberList= Arrays.asList(5,10,15,20,25,30,35,40,23);
+	List<Integer> numberList= Arrays.asList(5,5,10,15,20,25,30,35,40,23);
 	
-	numberList.stream().map(e->e*2).filter(i->i%2==0).forEach(System.out::println);
+	numberList.stream().distinct().map(i->i*2).forEach(System.out::println);
+	
+	
 	
 	
 		
