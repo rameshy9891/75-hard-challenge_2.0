@@ -1,5 +1,6 @@
 package com.hard.challenge.tenquestion.oneday;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class AppearOnce {
@@ -39,12 +40,13 @@ public class AppearOnce {
 	private static void check(int n, int[] arr) {
 		// TODO Auto-generated method stub
 		
-		int[] count= new int[101];
+		int[] count= new int[10];
 		
 		for(Integer num: arr) {
 			count[num]++;
 		}
 		
+		System.out.println(Arrays.toString(count));
 		int sum=0;
 		for(int i=0; i<count.length; i++) {
 			if(count[i]==1) {

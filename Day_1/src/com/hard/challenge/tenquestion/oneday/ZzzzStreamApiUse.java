@@ -11,6 +11,9 @@ public class ZzzzStreamApiUse {
 		
 		List<Integer> intList= Arrays.asList(10,20,30);
 		
+		intList.stream().forEach(i->System.out.print(i+i+" "));
+		System.out.println();
+		
 		//System.out.println(intList);
 		
 		System.out.println(intList.stream().filter(i->i*i==100).collect(Collectors.toSet()));
@@ -29,6 +32,13 @@ public class ZzzzStreamApiUse {
 		
 		
 		System.out.println(max.get());
+		
+		
+		List<String> nameList= Arrays.asList("ramesh" , "rahul","raj","ram","rohit","raja");
+		
+		nameList.stream().forEach(i->System.out.print(i.length()+" "));
+		
+		nameList.stream().map(i->i.length()).collect(Collectors.toList());
 		
 	}
 }
