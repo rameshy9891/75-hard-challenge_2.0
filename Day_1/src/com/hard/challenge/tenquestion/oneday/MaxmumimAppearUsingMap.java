@@ -30,7 +30,7 @@ public class MaxmumimAppearUsingMap {
 		int max=0;
 		char maxchar=' ';
 		for(Map.Entry<Character,Integer> me: hm.entrySet()) {
-		//	System.out.println(me.getKey()+"**"+me.getValue());
+		System.out.println(me.getKey()+"**"+me.getValue());
 			
 			if(max<me.getValue()) {
 				max=me.getValue();
@@ -39,7 +39,7 @@ public class MaxmumimAppearUsingMap {
 			}
 		}
 		
-		System.out.println(max+" "+maxchar);
+		System.out.println(maxchar+" "+max);
 	}
 
 }
